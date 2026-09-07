@@ -5,7 +5,7 @@ app_name = 'cake_recipes'
 urlpatterns = [
     #homepage
     path('', views.index, name='index'),
-    path('recipes/', views.recipes, name='recipes'),
+    path('cakes/', views.recipes, name='recipes'),
     # Individual recipes
     path('recipe/<int:recipe_id>/', views.recipe, name='recipe'), 
 ]
