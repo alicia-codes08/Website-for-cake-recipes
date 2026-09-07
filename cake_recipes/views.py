@@ -7,20 +7,20 @@ def index(request):
     return render(request, 'cake_recipes/index.html')
 
 
-def links(request):
-    """A base with links to the cakes and their recipes."""
-    return render(request, 'cake_recipes/links.html')
+def base(request):
+    """A base with to the cakes and the homepage."""
+    return render(request, 'cake_recipes/base.html')
 
 
 def recipes(request):
-    """A template for the recipes."""
+    """Get all the cakes and make a template."""
     recipes = Cake.objects.all()
     context = {'recipes': recipes}
     return render(request, 'cake_recipes/recipes.html', context)
 
 
 def recipe(request, recipe_id):
-    """To show the individual cakes."""
+    """Show the individual recipes for the cakes."""
     recipe = Cake.objects.get(id=recipe_id)
     recipe_items = recipe.recipe_set.all()
     context = {
