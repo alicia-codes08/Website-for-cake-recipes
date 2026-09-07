@@ -1,0 +1,17 @@
+{% extends 'cake_recipes/links.html' %}
+
+{% block content %}
+
+  <p>Cakes</p>
+  <ul>
+    {% for recipe in recipes %}
+      <li>
+        <a href="{% url 'cake_recipes:recipe' recipe.id %}">
+          {{ recipe.text }}</a>
+      </li>
+    {% empty %}
+      <li>No entries have been added yet.</li>
+    {% endfor %}
+  </ul>
+
+{% endblock content %} 
