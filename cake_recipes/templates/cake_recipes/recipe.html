@@ -1,16 +1,14 @@
 {% extends 'cake_recipes/base.html' %}
+{% load static %}
 
 {% block content %}
 
-  <p>Cake: {{ recipe.text }}</p>
+<p>Cake: {{ recipe.text }}</p>
 
-  <p>Recipe:</p>
-  <ul>
-    {% for item in recipe_items %}
-      <li>{{ item.text }}</li>
-    {% empty %}
-      <li>No items have been added to this cake yet.</li>
-    {% endfor %}
-  </ul>
-  
+<img src="{% static 'cake_recipes/images/burned.jpeg' %}" alt="Brownies" width="300">
+
+<p>Recipe:</p>
+
+<ul> {% for item in recipe_items %} <li>{{ item.text }}</li> {% empty %} <li>No items have been added to this cake yet.</li> {% endfor %} </ul>
+
 {% endblock content %}

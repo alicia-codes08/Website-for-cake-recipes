@@ -5,6 +5,7 @@ class Cake(models.Model):
     """The cakes name."""
     text = models.CharField(max_length=100)
     date = models.DateTimeField(auto_now_add=True)
+    image = models.CharField(max_length=100, blank=True)
 
     def __str__(self):
         """Show the cakes name."""
