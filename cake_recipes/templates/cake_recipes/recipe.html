@@ -5,10 +5,21 @@
 
 <p>Cake: {{ recipe.text }}</p>
 
-<img src="{% static 'cake_recipes/images/burned.jpeg' %}" alt="Brownies" width="300">
-
 <p>Recipe:</p>
 
 <ul> {% for item in recipe_items %} <li>{{ item.text }}</li> {% empty %} <li>No items have been added to this cake yet.</li> {% endfor %} </ul>
 
-{% endblock content %}
+{% if recipe.text == "Brownies" %}
+<img src="{% static 'cake_recipes/images/burned.jpeg' %}" alt="Brownies" width="300">
+{% endif %} 
+
+{% if recipe.text == "Vanilla Cake" %}
+<img src="{% static 'cake_recipes/images/vanilla.jpeg' %}" alt="Vanilla Cake" width="300">
+{% endif %} 
+
+{% if recipe.text == "Red Velvet Cake" %}
+<img src="{% static 'cake_recipes/images/red.jpeg' %}" alt="Red Velvet Cake" width="300">
+{% endif %} 
+
+
+{% endblock content %} 
