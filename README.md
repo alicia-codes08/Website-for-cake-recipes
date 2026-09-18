@@ -1,11 +1,3 @@
-This website shows three different cakes with their ingredientes. There you have three links for each cake
-and after clicking on it, you get to the ingredientes for the cake you clicked on. I build this 
-website with django in a virtual enviroment. I didn't build all html templates myself, because I'm not 
-familiar with html. I took the code for base.html, recipe.html and recipes.html from 
-https://github.com/ehmatthes/pcc_3e/tree/main/solution_files/chapter_18/ex_18_5_meal_planner/meal_plans and modified 
-them for my use. The ingredientes-lists are from chatGPT. 
-
-
 I added pictures in the second branch. I chanced a bit models.py that I can use pictures. Then I added a few lines of code in recipe.html and put three if-statements in it to make sure that the pictures with the cake matches with the ingredient-list of the corresponding cake.
 
 The pictures I used are from the following links: https://www.google.com/search?q=burned+cake+reddit&sca_esv=3aa3b3cf03932886&udm=2&biw=1280&bih=665&sxsrf=APpeQnt32JRrFfsuVm3UOdMkujlkdLMwkg%3A1788861213721&ei=Hdufare_K_2M9u8PqPatgA8&ved=2ahUKEwj3wcip296WAxV9hv0HHSh7C_AQ4dUDegQIBhAN&uact=5&oq=burned+cake+reddit&gs_lp=Egtnd3Mtd2l6LWltZyISYnVybmVkIGNha2UgcmVkZGl0SK41UJAPWK40cAV4AJABAJgBhQGgAZAJqgEEMTkuMbgBA8gBAPgBAZgCEqAC3QeoAgrCAgoQIxjJAhjqAhgnwgIHECMYyQIYJ8ICChAAGIAEGIoFGEPCAgsQABiABBixAxiDAcICBRAAGIAEwgIIEAAYgAQYsQPCAg4QABiABBiKBRixAxiDAcICEBAAGIAEGIoFGEMYsQMYgwHCAgkQABiABBgKGAvCAgQQABgewgIGEAAYHhgKwgIJEAAYgAQYExgKwgIHEAAYgAQYE8ICBhAAGB4YE8ICBhAAGAUYHsICCBAAGAUYHhgKwgIIEAAYCBgeGArCAgYQABgIGB6YAwWIBgGSBwQxNy4xoAe3WbIHBDE0LjG4B9EHwgcGMC4xMi42yAc1gAgB&sclient=gws-wiz-img#sv=CAMSURoyKhBlLTNwd3l2U3Jfa0pSWFNNMg4zcHd5dlNyX2tKUlhTTToOZXhNRTBnaDltekx0ak0gBCoXCg FzEhBlLTNwd3l2U3Jfa0pSWFNNGAEwARgHINXrwf8NSggQARgBIAEoAQ
